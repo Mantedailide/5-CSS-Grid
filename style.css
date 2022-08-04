@@ -1,0 +1,91 @@
+
+
+html {
+    /* 1rem= 18px */
+    /* 1rem=1% ekrano aukščio */
+    /* 1rem=1% ekrano aukščio vw */
+    /* isivedam kintamaji */
+    font-size: 1vw;
+}
+
+/* jei ekrano plotis tampa 1280px, html font size pasikeičia į 12px */
+/* 1 rem=14px */
+/* 80rem=1120px */
+p {
+    /* 1px */
+    /* procentais ar vw ar vh mes tiesiogiai neuzdedame-bloga praktika */
+    font-size: 1rem;
+    /* >1500px-18px */
+    /* <1280px-22px */
+}
+.staciakampis {
+    /*plotis pikseliais tik ypatingai smulkiemsdizaino elementams  */
+    /* 50x50px */
+    /* 1920 px ekranas 100%=1920px */
+    /* 1500px =x% */
+    /* 1500/1920=0.78125, kažkur 78% */
+    width: 78%;
+    height: 100px;
+    background-color: red;
+}
+.staciakampis1{
+    width:50%;
+    height:200px;
+    background-color: green;
+}
+.staciakampis2{
+    /* staciakampis1 plocio */
+    /* 25% ekrano */
+    width:50%;
+    height:200px;
+    background-color: yellow;
+}
+.staciakampis3{
+    width:80rem;
+    height:10rem;
+    background-color: yellow;
+    /* 720px x 180px */
+}
+.staciakampis4 {
+    /* plotis procentais nuo tėvinio elemento */
+    width: 50%;
+    height:200px;
+    background-color: green;
+}
+/* aukštis nenustatinėjamas %. Dėžutėse yra turinys. Nuo turinio priklauso elemento aukštis */
+/* Aukštis priklauso nuo turinio, naršyklė neturi atskaito taško pagal ką skaičiuoti auktį procentais */
+/* vh-viewpport height */
+.staciakampis5{
+    /* viewport width ekrano plotis % */
+    width:50vh;
+    height:50vw;
+    background-color: yellow;
+}
+
+
+@media screen and (max-width:1500px) {
+    /* html{
+        font-size: 24px;
+    } */
+}
+
+/* pritaikyk ekrano dizain1a jeigu ekrano dydis mazesnis nei 1280px*/
+/* jei ekranas didesnis nei 1280px sios taisykles neprisitaikys */
+@media screen and (max-width:1280px) {
+.staciakampis5 {
+    background-color: red;
+}  
+        /* html{
+        font-size: 36px;
+        } */
+}
+
+/* pritaikyk ekrano dizain1a jeigu ekrano dydis mazesnis nei 720px*/
+@media screen and (max-width:720px) {
+    .staciakampis5 {
+        background-color: green;
+    }
+    /* html{
+        font-size: 42px;
+    } */
+}

@@ -8,6 +8,29 @@ html {
     font-size: 1vw;
 }
 
+.flex-container {
+    display:flex;
+    flex-wrap: nowrap;
+}
+.flex-container1 {
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+.flex-item {
+    width:25%;
+    height:200px;
+    background-color: blue;
+    border:1px white solid;
+}
+
+.flex-item1 {
+    width:50%;
+    height:200px;
+    background-color: blue;
+    border:1px white solid;
+}
+
 /* jei ekrano plotis tampa 1280px, html font size pasikeičia į 12px */
 /* 1 rem=14px */
 /* 80rem=1120px */
@@ -75,6 +98,12 @@ p {
 .staciakampis5 {
     background-color: red;
 }  
+.flex-item1{
+    width:100%;
+}
+.flex-container1 {
+    flex-wrap: wrap;
+}
         /* html{
         font-size: 36px;
         } */
@@ -85,7 +114,22 @@ p {
     .staciakampis5 {
         background-color: green;
     }
+    .flex-container {
+        flex-wrap: wrap;
+    }
+    .flex-item{
+        width:49%;
+    }
     /* html{
         font-size: 42px;
     } */
+}
+@media screen and (max-width:500px) {
+   .flex-item{
+ width:100%;
+   }
+   .flex-container{
+    flex-wrap: nowrap;
+    flex-direction: column;
+   }
 }

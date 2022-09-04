@@ -1,0 +1,11 @@
+.block-left {
+padding: 10px;
+background-color: aqua;
+font-size: 24px;
+}
+
+.block-right {
+padding: 10px;
+background-color: green;
+font-size: 24px;
+}
